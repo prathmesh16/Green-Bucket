@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:foregroundGravity="center"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/app_logo_horizontal"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_rect_white"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingVertical="15dp"
+        android:textSize="18dp"></EditText>
+
+    <EditText
+        android:id="@+id/otp_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_rect_white"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:paddingVertical="15dp"
+        android:textSize="18dp"
+        android:visibility="gone"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate otp"
+        android:id="@+id/otp"
+        android:layout_below="@+id/mobile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textSize="15dp"
+        android:background="@drawable/round_rect_red"
+        android:textColor="#ffffff">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/login"
+        android:layout_below="@+id/otp_et"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="80dp"
+        android:textSize="15dp"
+        android:background="@drawable/round_rect_red"
+        android:textColor="#ffffff"
+        android:visibility="gone">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redirect_to_signup"
+        android:layout_below="@id/otp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingHorizontal="30dp"
+        android:text="Don't have an account? Register Here"
+        android:textSize="14dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redirect_to_signup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="68dp"
+        android:gravity="center_horizontal"
+        android:text="Skip Login" />
+
+
+</RelativeLayout>

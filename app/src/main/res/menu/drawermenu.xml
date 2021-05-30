@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nd_home" android:title="Home" android:icon="@drawable/home_icon"/>
+    <item android:id="@+id/nd_whatsapp" android:title="Chat on WhatsApp" android:icon="@drawable/whatsapp_icon"/>
+    <item android:id="@+id/nd_orders" android:title="My Orders" android:icon="@drawable/orders_icon"/>
+    <item android:id="@+id/nd_profile" android:title="Profile" android:icon="@drawable/user_icon"/>
+    <item android:id="@+id/nd_logout" android:title="Logout" android:icon="@drawable/logout_icon"/>
+
+</menu>

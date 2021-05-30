@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Green Bucket UI</string>
+    <string name="fruits">Fresh Fruits</string>
+    <string name="vegetables">Fresh Vegetables</string>
+    <string name="cart_page">Your Bucket</string>
+    <string name="address_page">Choose Delivery Address</string>
+</resources>
